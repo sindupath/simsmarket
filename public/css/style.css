@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  user-select: none;
+  height: fit-content;
+  position: relative;
+}
+
+/* side scroll bar style*/
+
+body::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 79, 79);
+  border-radius: 3px;
+}
+.category-box::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.category-box::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+
+/* header styles */
+
+/* basic styles */
+
+.header {
+  width: 100%;
+  height: 100%;
+}
+
+/* header tag contains 3 type of sections  */
+
+/**/
+/*header bar  contain 3 stage */
+
+.header-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-bar {
+  width: 150px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.center-bar {
+  width: 60%;
+  font-weight: 500;
+  height: 90%;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(105, 100, 100);
+}
+
+.lang-bar {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-bar span {
+  height: 28px;
+  width: 28px;
+  background-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.social-bar span:hover {
+  background-color: darkorange;
+}
+
+.social-bar span:hover > i {
+  font-size: 20px;
+  color: black;
+}
+
+select,
+option {
+  border: #d6d6d6;
+  border-radius: 10px;
+}
+
+.lang-bar #lang {
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/*end of the header-bar*/
+
+/* logo-bar start it contain 
+       3 stage logo search and other cart icons */
+
+.logo-bar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.order {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.order a{
+  text-decoration: none;
+  color: black;
+}
+.logo img {
+  width: auto;
+  height: 30%;
+}
+
+.search input {
+  width: 90%;
+  height: 40%;
+  border-radius: 10px;
+  border: 2px solid grey;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.search i {
+  position: absolute;
+  font-size: 25px;
+  color: rgb(94, 90, 90);
+  right: 8%;
+}
+
+.order span {
+  font-size: 30px;
+}
+
+/* end of logo-bar*/
+
+/* nav-bar start from here*/
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+.nav-bar a {
+  color: black;
+  display: inline-block;
+  min-height: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 5px 0 5px;
+  transition: 0.1s;
+}
+
+.nav-box {
+  min-height: 150px;
+  padding: 10px;
+  min-width: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  visibility: hidden;
+  z-index: 6;
+  position: absolute;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.nav-box-1 {
+  width: 100%;
+  height: 300px;
+  left: 0;
+}
+
+.nav-bar a:hover > .nav-box {
+  visibility: visible;
+}
+
+.nav-bar a:active > .nav-box {
+  visibility: visible;
+}
+
+.nav-bar::-webkit-scrollbar {
+  background-color: white;
+  height: 10px;
+}
+.nav-bar::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+.nav-bar a:hover {
+  color: orangered;
+  border-bottom: 4px solid orangered;
+}
+
+/* container 1 start from here simple slider 
+    is made up here */
+
+.container {
+  width: 100%;
+
+  height: auto;
+}
+
+.img-bar {
+  height: fit-content;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.banner:nth-child(1) {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 1;
+}
+.banner:nth-child(2) {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 1;
+  display: none;
+}
+
+.text-bar {
+  position: absolute;
+  width: auto;
+  padding: 5%;
+  height: auto;
+  top: 0;
+}
+
+.text-bar h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: orangered;
+}
+
+.text-bar h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.text-bar p {
+  font-size: 25px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.text-bar button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 30px;
+  background-color: orangered;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* cat box start from here */
+.side-box {
+  min-width: auto;
+  height: auto;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 10px 20px;
+
+  padding: 0;
+  padding-bottom: 10px;
+}
+.side-box::-webkit-scrollbar {
+  background-color: white;
+  height: 10px;
+}
+.side-box::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+.cat-box {
+  width: 300px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 100px;
+  background-color: gainsboro;
+}
+
+/*content box start from here */
+
+.cont-box {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  margin: 10px 10px;
+}
+.aside {
+  width: 25%;
+  height: 50%;
+  border-radius: 5px;
+  top: 0;
+  position: sticky;
+ 
+}
+
+.aside .menu {
+  margin-top: 40px;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  width: 100%;
+  height:600px;
+  padding: 20px;
+  overflow-y: scroll;
+  white-space:nowrap;
+ 
+}
+
+.aside .menu h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: orangered;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+
+.aside .menu ul {
+  list-style: none;
+  display: block;
+}
+.aside .menu ul li {
+  margin-top: 10px;
+  min-height: 40px;
+  width: 100%;
+  display: block;
+}
+.aside .menu ul li input{
+  display: none;
+}
+.aside .menu ul li .name {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  transition: 2s;
+  align-items: center;
+}
+
+ .aside .menu ul li .items {
+  width: 100%;
+  height: auto;
+  display: none;
+  
+}
+
+
+.aside .menu::-webkit-scrollbar {
+  width: 10px;
+  margin: 20px;
+
+}
+
+.aside .menu::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+.aside .menu ul li #cat-item-1:checked ~ #cat-items-1{
+  display: block;
+}
+.aside .menu ul li #cat-item-2:checked ~ #cat-items-2{
+  display: block;
+}
+.aside .menu ul li #cat-item-3:checked ~ #cat-items-3{
+  display: block;
+}
+.aside .menu ul li #cat-item-4:checked ~ #cat-items-4{
+  display: block;
+}
+.aside .menu ul li #cat-item-5:checked ~ #cat-items-5{
+  display: block;
+}
+.aside .menu ul li #cat-item-6:checked ~ #cat-items-6{
+  display: block;
+}
+.aside .menu ul li .items ul {
+  list-style: none;
+  width: 100%;
+}
+
+.aside .menu ul li .items ul li {
+  font-size: 14px;
+}
+.aside .menu ul li .items ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.aside .menu ul li .name .icon-box {
+  width: 30px;
+  border-radius: 10%;
+  background-color: gainsboro;
+  margin-right: 20px;
+  height: 30px;
+}
+
+.content {
+  padding: 10px;
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .cont {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.box {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+.cont::-webkit-scrollbar {
+  background-color: white;
+  height: 10px;
+}
+.cont::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+/*additional box start from here */
+.add-box {
+  height: auto;
+  width: 100%;
+  padding: 0 5% 0 5%;
+}
+.add-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.add-box img:nth-child(2){
+  display: none;
+}
+
+.add-cont {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.add-box .cont {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.prod {
+  height: 250px;
+  background-color: gainsboro;
+  margin-right: 20px;
+  width: 400px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+/* footer start from here
+it have 
+3 type of data
+
+*/
+
+footer {
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+}
+
+.fh {
+  border: 1px solid grey;
+}
+
+/* bottom nav bar start from here now */
+.bottom {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.bottom-nav {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.bottom-nav .icon-box {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  align-items: center;
+}
+.bottom-nav .icon-box a {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.bottom-nav .icon-box a i {
+  color: black;
+  width: 100%;
+  font-size: 28px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bottom-nav .icon-box .menu {
+  min-width: 40%;
+  box-sizing: content-box;
+  max-width: 60%;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  white-space: nowrap;
+  left: 0;
+  background-color: white;
+  display: none;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+ 
+}
+#menu-1-input{
+  display: none;
+}
+#menu-2-input{
+  display: none;
+}
+
+
+#menu-1-input:checked ~ .menu-1{
+  display: block;
+  
+}
+#menu-2-input:checked  ~ .menu-2{
+  display: block;
+ 
+}
+
+.close{
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  font-size: 20px;
+  right: 20px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+ 
+}
+/* menu2 ooda setting lam start from here */
+
+#item-2-1:checked ~ #items-2-1{
+  display: block;
+}
+#item-2-2:checked ~ #items-2-2{
+  display: block;
+}
+#item-2-3:checked ~ #items-2-3{
+  display: block;
+}
+#item-2-4:checked ~ #items-2-4{
+  display: block;
+}
+#item-2-5:checked ~ #items-2-5{
+  display: block;
+}
+#item-2-6:checked ~ #items-2-6{
+  display: block;
+}
+
+
+.bottom-nav .menu h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: orangered;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.bottom-nav .menu ul {
+  list-style: none;
+  
+}
+.bottom-nav .menu ul li {
+  margin-top: 10px;
+  min-height: 40px;
+  width: 100%;
+ 
+}
+.bottom-nav .menu ul li .name {
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  transition: 2s;
+  align-items: center;
+
+}
+
+
+
+
+.bottom-nav .menu ul li .items {
+  width: 100%;
+  height: fit-content;
+  list-style: none;
+  display: none;
+  
+}
+
+
+
+.bottom-nav .menu ul li .items ul li {
+  font-size: 14px;
+ min-height: 10px;
+  align-items: center;
+  display: block;
+
+
+}
+.bottom-nav .menu ul li .items ul li a{
+  text-decoration: none;
+font-weight: 400;
+  font-size: 15px;
+  color:grey;
+  padding-left: 20px;
+  text-align: center;
+
+}
+
+.bottom-nav .menu ul li .name .icon-box {
+  width: 30px;
+  border-radius: 10%;
+  background-color: gainsboro;
+  margin-right: 20px;
+  height: 30px;
+}
+input.invisible{
+  display: none;
+
+}
+input#item:checked ~.items{
+  display: block;
+
+}
+input#item2:checked ~.items{
+  display: block;
+
+}
+input#item3:checked ~.items{
+  display: block;
+
+}
+input#item4:checked ~ .items{
+  display: block;
+}
+input#item5:checked ~ .items{
+  display: block;
+}
+input#item6:checked ~ .items{
+  display: block;
+}
+input#item7:checked ~ .items{
+  display: block;
+}
+
+
+/* directory or site map of full site */
+
+.dir-box {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: flex-start;
+}
+
+.dir {
+  display: flex;
+  margin-top: 10px;
+  height: fit-content;
+  width: 100%;
+}
+
+.dir h1 {
+  color: orangered;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.dir h2 {
+  font-size: 18px;
+  text-align: start;
+  min-width: 20%;
+  font-weight: 600;
+}
+
+.dir h5 {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 60%;
+  text-align: left;
+  word-spacing: 5px;
+}
+
+/* service box */
+
+.our-box {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: first baseline;
+}
+
+.our {
+  width: 33.3%;
+  height: auto;
+}
+
+.our h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 89, 0);
+}
+
+.our ul {
+  list-style: none;
+  color: grey;
+  gap: 10px;
+}
+
+/* copyright*/
+
+.copy-box {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  color: grey;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.copy-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.copy-box img {
+  width: auto;
+  height: 30px;
+}
+
+.active{
+  display: block;
+}

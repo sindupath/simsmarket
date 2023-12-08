@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMS MARKET</title>
+    <link
+    rel="shortcut icon"
+    href="./images/logo black.png"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./css/profile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+    <div class="container">
+    <div class="aside"><h2>Profile </h2>
+     <div class="box">
+        <ul>
+            <li><a href="/">Back to Home</a></li>
+            <li>Orders & history</li>
+            <li><a href="/auth/logout">Logout</a></li>
+        </ul>
+    </div>
+</div>
+   
+    <div class="content">
+        
+        <div class="user-info">
+            <div class="id">USER ID : {{user.PHONE}}</div>
+            <div class="info">
+                <ul>
+                    <li>
+                       <span> Name :</span> <h4> {{user.NAME}}</h4>
+                    </li>
+                    <li><span>Phone :</span><h4> {{user.PHONE}}</h4></li>
+                    <li><span>Address :</span> <h4>10/74B,<br>south street,
+                        <br>northalagunachiya puram,<br>sankarankovil,<br>tenkasi,<br>tamilnadu - 627754</h4></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<script>
+
+</script>
+
+</body>
+</html>
